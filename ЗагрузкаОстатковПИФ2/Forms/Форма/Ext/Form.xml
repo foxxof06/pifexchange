@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="Команда1" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Команда1</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выполнить загрузку данных</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Page name="ГруппаЗагрузка" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа загрузка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЗагрузкаРасширеннаяПодсказка" id="25"/>
+					<ChildItems>
+						<Pages name="ГруппаВсеНастройки" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа все настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа все настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаВсеНастройкиРасширеннаяПодсказка" id="59"/>
+							<ChildItems>
+								<Page name="ГруппаОтборПортфелей" id="56">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор портфелей</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отбор портфелей</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаОтборПортфелейРасширеннаяПодсказка" id="57"/>
+									<ChildItems>
+										<Table name="ОтборПортфелей" id="62">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ОтборПортфелей</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ОтборПортфелейКонтекстноеМеню" id="63"/>
+											<AutoCommandBar name="ОтборПортфелейКоманднаяПанель" id="64">
+												<ChildItems>
+													<Button name="ОтборПортфелейПоступлениеНаТранзитныйСчетУстановитьПометку" id="81">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПоступлениеНаТранзитныйСчетУстановитьПометку</CommandName>
+														<ExtendedTooltip name="ОтборПортфелейПоступлениеНаТранзитныйСчетУстановитьПометкуРасширеннаяПодсказка" id="82"/>
+													</Button>
+													<Button name="ОтборПортфелейПоступлениеНаТранзитныйСчетСнятьПометку" id="83">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПоступлениеНаТранзитныйСчетСнятьПометку</CommandName>
+														<ExtendedTooltip name="ОтборПортфелейПоступлениеНаТранзитныйСчетСнятьПометкуРасширеннаяПодсказка" id="84"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ОтборПортфелейРасширеннаяПодсказка" id="65"/>
+											<SearchStringAddition name="ОтборПортфелейСтрокаПоиска" id="66">
+												<AdditionSource>
+													<Item>ОтборПортфелей</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОтборПортфелейСтрокаПоискаКонтекстноеМеню" id="67"/>
+												<ExtendedTooltip name="ОтборПортфелейСтрокаПоискаРасширеннаяПодсказка" id="68"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ОтборПортфелейСостояниеПросмотра" id="69">
+												<AdditionSource>
+													<Item>ОтборПортфелей</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОтборПортфелейСостояниеПросмотраКонтекстноеМеню" id="70"/>
+												<ExtendedTooltip name="ОтборПортфелейСостояниеПросмотраРасширеннаяПодсказка" id="71"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ОтборПортфелейУправлениеПоиском" id="72">
+												<AdditionSource>
+													<Item>ОтборПортфелей</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ОтборПортфелейУправлениеПоискомКонтекстноеМеню" id="73"/>
+												<ExtendedTooltip name="ОтборПортфелейУправлениеПоискомРасширеннаяПодсказка" id="74"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="ОтборПортфелейПортфель" id="75">
+													<DataPath>ОтборПортфелей.Портфель</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОтборПортфелейПортфельКонтекстноеМеню" id="76"/>
+													<ExtendedTooltip name="ОтборПортфелейПортфельРасширеннаяПодсказка" id="77"/>
+												</InputField>
+												<CheckBoxField name="ОтборПортфелейЗагружать" id="78">
+													<DataPath>ОтборПортфелей.Загружать</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОтборПортфелейЗагружатьКонтекстноеМеню" id="79"/>
+													<ExtendedTooltip name="ОтборПортфелейЗагружатьРасширеннаяПодсказка" id="80"/>
+												</CheckBoxField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаОбъектыЗагрузки" id="60">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объекты загрузки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа объекты загрузки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаОбъектыЗагрузкиРасширеннаяПодсказка" id="61"/>
+									<ChildItems>
+										<CheckBoxField name="ЗагружатьВводОстатковПоИмуществу" id="29">
+											<DataPath>ЗагружатьВводНачальныхОстатковПоИмуществу</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводОстатковПоИмуществуКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="ЗагружатьВводОстатковПоИмуществуРасширеннаяПодсказка" id="31"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьВводНачальныхОстатковПоДенежнымСредствам" id="32">
+											<DataPath>ЗагружатьВводНачальныхОстатковПоДенежнымСредствам</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводНачальныхОстатковПоДенежнымСредствамКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="ЗагружатьВводНачальныхОстатковПоДенежнымСредствамРасширеннаяПодсказка" id="34"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьВводНачальныхОстатковПоВзаиморасчетам" id="35">
+											<DataPath>ЗагружатьВводНачальныхОстатковПоВзаиморасчетам</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводНачальныхОстатковПоВзаиморасчетамКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="ЗагружатьВводНачальныхОстатковПоВзаиморасчетамРасширеннаяПодсказка" id="37"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьВводНачальныхОстатковПоНДС" id="38">
+											<DataPath>ЗагружатьВводНачальныхОстатковПоНДС</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводНачальныхОстатковПоНДСКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="ЗагружатьВводНачальныхОстатковПоНДСРасширеннаяПодсказка" id="40"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьВводНачальныхОстатковПоДенежнымТребованиям" id="41">
+											<DataPath>ЗагружатьВводНачальныхОстатковПоДенежнымТребованиям</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводНачальныхОстатковПоДенежнымТребованиямКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="ЗагружатьВводНачальныхОстатковПоДенежнымТребованиямРасширеннаяПодсказка" id="43"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьВводНачальныхОстатковПоПайщикам" id="44">
+											<DataPath>ЗагружатьВводНачальныхОстатковПоПайщикам</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводНачальныхОстатковПоПайщикамКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ЗагружатьВводНачальныхОстатковПоПайщикамРасширеннаяПодсказка" id="46"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьВводНачальныхОстатковПоНалогам" id="47">
+											<DataPath>ЗагружатьВводНачальныхОстатковПоНалогам</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводНачальныхОстатковПоНалогамКонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="ЗагружатьВводНачальныхОстатковПоНалогамРасширеннаяПодсказка" id="49"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьВводДанныхРегистрацияЗемельныхУчастков" id="50">
+											<DataPath>ЗагружатьВводДанныхРегистрацияЗемельныхУчастков</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводДанныхРегистрацияЗемельныхУчастковКонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="ЗагружатьВводДанныхРегистрацияЗемельныхУчастковРасширеннаяПодсказка" id="52"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьВводПрочихДанных" id="53">
+											<DataPath>ЗагружатьВводПрочихДанных</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьВводПрочихДанныхКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="ЗагружатьВводПрочихДанныхРасширеннаяПодсказка" id="55"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗагружатьДанныеОбъектов" id="26">
+											<DataPath>ЗагружатьДанныеОбъектов</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагружатьДанныеОбъектовКонтекстноеМеню" id="27"/>
+											<ExtendedTooltip name="ЗагружатьДанныеОбъектовРасширеннаяПодсказка" id="28"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройки" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<InputField name="ПутьКФайлуЗагрузкиОстатков" id="8">
+							<DataPath>ПутьКФайлуЗагрузкиОстатков</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПутьКФайлуЗагрузкиОстатковКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ПутьКФайлуЗагрузкиОстатковРасширеннаяПодсказка" id="10"/>
+							<Events>
+								<Event name="StartChoice">ПутьКФайлуЗагрузкиОстатковНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПутьКФайлуЗагрузкиОбъектов" id="5">
+							<DataPath>ПутьКФайлуЗагрузкиОбъектов</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПутьКФайлуЗагрузкиОбъектовКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ПутьКФайлуЗагрузкиОбъектовРасширеннаяПодсказка" id="7"/>
+							<Events>
+								<Event name="StartChoice">ПутьКФайлуЗагрузкиОбъектовНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="ПерезаполнятьСуществующиеОбъекты" id="11">
+							<DataPath>ПерезаполнятьСуществующиеОбъекты</DataPath>
+							<Visible>false</Visible>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПерезаполнятьСуществующиеОбъектыКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ПерезаполнятьСуществующиеОбъектыРасширеннаяПодсказка" id="13"/>
+						</CheckBoxField>
+						<InputField name="ПутьККаталогуСхем" id="21">
+							<DataPath>ПутьККаталогуСхем</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПутьККаталогуСхемКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ПутьККаталогуСхемРасширеннаяПодсказка" id="23"/>
+							<Events>
+								<Event name="StartChoice">ПутьККаталогуСхемНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Основные" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновныеРасширеннаяПодсказка" id="17"/>
+					<ChildItems>
+						<TextDocumentField name="ПолеОтчетаОЗагрузке" id="18">
+							<DataPath>ОтчетОЗагрузке</DataPath>
+							<ContextMenu name="ПолеОтчетаОЗагрузкеКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ПолеОтчетаОЗагрузкеРасширеннаяПодсказка" id="20"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаОстатковПИФ2</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПутьКФайлуЗагрузкиОстатков" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу загрузки остатков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПутьКФайлуЗагрузкиОстатков</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПутьКФайлуЗагрузкиОбъектов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу загрузки объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПутьКФайлуЗагрузкиОбъектов</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПерезаполнятьСуществующиеОбъекты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнять существующие объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтчетОЗагрузке" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет о загрузке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьККаталогуСхем" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к каталогу схем</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПутьККаталогуСхем</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АдресФайлаСхемыОстатки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес файла схемы остатки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресФайлаСхемыОбъекты" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес файла схемы объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗагружатьВводНачальныхОстатковПоИмуществу" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод начальных остатков по имуществу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводНачальныхОстатковПоИмуществу</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АдресФайлаОстатки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес файла остатки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресФайлаОбъекты" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес файла объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗагружатьДанныеОбъектов" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать данные объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьДанныеОбъектов</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗагружатьВводНачальныхОстатковПоДенежнымСредствам" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод начальных остатков по денежным средствам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводНачальныхОстатковПоДенежнымСредствам</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗагружатьВводНачальныхОстатковПоВзаиморасчетам" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод начальных остатков по взаиморасчетам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводНачальныхОстатковПоВзаиморасчетам</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗагружатьВводНачальныхОстатковПоНДС" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод начальных остатков по НДС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводНачальныхОстатковПоНДС</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗагружатьВводНачальныхОстатковПоДенежнымТребованиям" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод начальных остатков по денежным требованиям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводНачальныхОстатковПоДенежнымТребованиям</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗагружатьВводНачальныхОстатковПоПайщикам" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод начальных остатков по пайщикам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводНачальныхОстатковПоПайщикам</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗагружатьВводНачальныхОстатковПоНалогам" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод начальных остатков по налогам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводНачальныхОстатковПоНалогам</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗагружатьВводДанныхРегистрацияЗемельныхУчастков" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод данных регистрация земельных участков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводДанныхРегистрацияЗемельныхУчастков</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗагружатьВводПрочихДанных" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать ввод прочих данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗагружатьВводПрочихДанных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтборПортфелей" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор портфелей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтборПортфелей</Field>
+			</Save>
+			<Columns>
+				<Column name="Портфель" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Портфель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Портфели</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Загружать" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загружать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИспользоватьОтборПоПортфелям" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать отбор по портфелям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Команда1" id="1">
+			<Action>Команда1</Action>
+		</Command>
+		<Command name="ПоступлениеНаТранзитныйСчетУстановитьПометку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление на транзитный счет установить пометку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление на транзитный счет установить пометку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоступлениеНаТранзитныйСчетУстановитьПометку</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПоступлениеНаТранзитныйСчетСнятьПометку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление на транзитный счет снять пометку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление на транзитный счет снять пометку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоступлениеНаТранзитныйСчетСнятьПометку</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>
